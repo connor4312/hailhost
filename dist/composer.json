@@ -1,0 +1,14 @@
+{
+    "name": "connor4312/hailhost",
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.*"
+    },
+    "license": "Proprietary",
+    "authors": [
+        {
+            "name": "Connor Peet",
+            "email": "connor@connorpeet.com"
+        }
+    ]
+}
