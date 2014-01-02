@@ -1,1 +1,216 @@
-@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import 'bs/bootstrap.less';
+
+#page-wrap {
+	padding-top: @navbar-height;
+}
+
+@-webkit-keyframes cloudscroll {
+  0%   { background-position: 0px 0px; }
+  100% { background-position: 1000px 0px; }
+}
+@-moz-keyframes cloudscroll {
+  0%   { background-position: 0px 0px; }
+  100% { background-position: 1000px 0px; }
+}
+@keyframes cloudscroll {
+  0%   { background-position: 0px 0px; }
+  100% { background-position: 1000px 0px; }
+}
+
+#intro {
+	color: #fff;
+	#gradient.vertical(#50b5e1, #1f90c1);
+	padding: 50px 0 116px;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 86px;
+		background: url('../img/clouds.png');
+		bottom: 0px;
+		.animation(cloudscroll 90s linear infinite)
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		width: 348px;
+		height: 210px;
+		background: url('../img/plane.png');
+		bottom: 0px;
+		left: 50%;
+		margin-left: 200px;
+	}
+
+	h1 {
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	.btn {
+		display: block;
+		width: 100%;
+	}
+}
+
+h1, h2 {
+	font-weight: 200;
+}
+
+h1.fancy {
+	text-align: center;
+	margin: 60px 0;
+	font-size: 4em;
+	color: @brand-primary;
+
+	b {
+		font-weight: 300;
+		color: #666;
+	}
+}
+
+.falist {
+
+	.fa {
+		position: absolute;
+		display: block;
+		width: 2em;
+		left: 0;
+		text-align: center;
+		top: 50%;
+		line-height: 1em;
+		margin-top: -0.5em;
+	}
+
+	li {
+		list-style-type: none;
+		padding-left: 2em;
+		position: relative;
+		margin-bottom: 0.75em;
+	}
+}
+
+.plan {
+
+	text-align: center;
+
+	img {
+		width: 100%;
+	}
+
+	span {
+		display: block;
+		text-align: center;
+		line-height: 2em;
+		font-size: 1.1em;
+		position: relative;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+	}
+
+	p {
+		border: 1px solid #ccc;
+		padding: 9%;
+		margin: -1em 10%;
+	}
+
+	.plan-btn {
+		line-height: 2em;
+		display: block;
+		margin: 0 auto;
+		width: 50%;
+	}
+}
+.makePlanColors(@name, @background, @color) {
+	@sel: ~'.plan.plan-@{name}';
+	@{sel} {
+		span, .plan-btn {
+			background: @background;
+			color: @color;
+		}
+		.plan-btn:hover {
+			text-decoration: none;
+			background: lighten(@background, 10%)
+		}
+	}
+}
+
+.makePlanColors('chicken', #e70d0c, #fff);
+.makePlanColors('cow', #7e4b1b, #fff);
+.makePlanColors('creeper', #52de3d, #fff);
+.makePlanColors('wither', #000, #fff);
+
+.showmore {
+	display: block;
+	margin: 30px 0 60px;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+	border-bottom: aliceblue;
+	line-height: 2em;
+	position: relative;
+	color: #999;
+
+	&:after, &:before {
+		content: "";
+		display: block;
+		position: absolute;
+	}
+
+	&:after {
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		border-bottom: 1px solid #ddd;
+		z-index: -100;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+		height: 2em;
+		border-radius: 1em;
+	}
+
+	&:before {
+		width: 2em;
+		height: 2em;
+		border-right: 1px solid #ddd;
+		border-bottom: 1px solid #ddd;
+		border-radius: 0.4em;
+		background: #fff;
+		position: absolute;
+		bottom: -1em;
+		left: 50%;
+		.rotate(45deg);
+		margin: 0 0 0 -1em;
+		z-index: -10;
+	}
+}
+
+footer {
+	background: @brand-primary;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	a {
+		color: lighten(@brand-primary, 25%);
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+.btn-toaction {
+	display: block;
+	max-width: 450px;
+	margin: 0 auto 60px;
+	font-size: 2em;
+	padding: 20px;
+}
