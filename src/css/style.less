@@ -1,7 +1,19 @@
 @import 'bs/bootstrap.less';
 
+html, body {
+	height: 100%;
+}
+
 #page-wrap {
-	padding-top: @navbar-height;
+	padding: @navbar-height 0 30px;
+	min-height: 100%;
+	margin-bottom: -70px;
+
+	&:after {
+		content: "";
+		display: block;
+		height: 70px;
+	}
 }
 a {
 	cursor: pointer;
@@ -241,6 +253,7 @@ footer {
 			margin: 0.5em 0.25em 0;
 			border: 1px solid @brand-primary;
 			border-radius: 50%;
+			.transition(0.3s);
 		}
 
 		li {
@@ -250,6 +263,7 @@ footer {
 			&.active {
 				a {
 					background: @brand-primary;
+					.transition(0.3s);
 				}
 			}
 		}

@@ -20,7 +20,9 @@ module.exports = function(grunt) {
     },
     uglify: {
       options: {
-        banner: '/*! (c) 2013 CraftYourBox. Designed by pyxld.com */\n"use strict";'
+        banner: '/*! (c) 2013 CraftYourBox. Designed by pyxld.com */\n"use strict";',
+        beautify: true,
+        compress: false
       },
       dist: {
         files: [{
