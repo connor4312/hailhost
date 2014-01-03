@@ -3,6 +3,9 @@
 #page-wrap {
 	padding-top: @navbar-height;
 }
+a {
+	cursor: pointer;
+}
 
 @-webkit-keyframes cloudscroll {
   0%   { background-position: 0px 0px; }
@@ -79,13 +82,13 @@ h1.fancy {
 		left: 0;
 		text-align: center;
 		top: 50%;
-		line-height: 1em;
-		margin-top: -0.5em;
+		line-height: 2em;
+		margin-top: -1em;
 	}
 
 	li {
 		list-style-type: none;
-		padding-left: 2em;
+		padding-left: 2.5em;
 		position: relative;
 		margin-bottom: 0.75em;
 	}
@@ -207,10 +210,61 @@ footer {
 	}
 }
 
+.bluefa .fa {
+	border: 1px solid @brand-primary;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+}
+
 .btn-toaction {
 	display: block;
 	max-width: 450px;
 	margin: 0 auto 60px;
 	font-size: 2em;
 	padding: 20px;
+}
+
+.content-switchy {
+
+	.btns {
+		display: block;
+		height: 2.5em;
+		border-bottom: 1px solid #ddd;
+		margin: 0 3em 0.5em;
+		padding: 0 2em;
+
+		a {
+			display: inline-block;
+			width: 1.5em;
+			height: 1.5em;
+			margin: 0.5em 0.25em 0;
+			border: 1px solid @brand-primary;
+			border-radius: 50%;
+		}
+
+		li {
+			list-style-type: none;
+			float: left;
+
+			&.active {
+				a {
+					background: @brand-primary;
+				}
+			}
+		}
+	}
+
+	.slides {
+		li {
+			display: none;
+
+			&.active {
+				display: block;
+			}
+
+		}
+
+	}
+
 }
