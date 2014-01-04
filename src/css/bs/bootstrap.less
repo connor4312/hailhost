@@ -2,6 +2,7 @@
 @import "../../../bower_components/bootstrap/less/variables.less";
 
 @brand-primary: #4bb1dd;
+@body-bg: #f7f7f7;
 
 @font-family-sans-serif:  "raleway", sans-serif;
 @font-family-serif:       "adelle", serif;
@@ -10,6 +11,24 @@
 @headings-font-family:    "raleway", sans-serif;
 
 @navbar-height: 50px;
+
+@navbar-inverse-color:                      #fff;
+@navbar-inverse-bg:                         @brand-primary;
+@navbar-inverse-border:                     @brand-primary;
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 #fff;
+@navbar-inverse-link-hover-color:           lighten(@brand-primary, 25%);
+@navbar-inverse-link-hover-bg:              darken(@brand-primary, 10%);
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             @navbar-inverse-link-hover-bg;
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            @navbar-inverse-link-hover-bg;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
 
 @import "../../../bower_components/bootstrap/less/mixins.less";
 

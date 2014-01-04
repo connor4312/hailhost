@@ -18,6 +18,14 @@ html, body {
 a {
 	cursor: pointer;
 }
+.navbar-brand {
+	font-family: @font-family-sans-serif;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+}
+.whitegrad {
+	#gradient.vertical(#fff, @body-bg);
+}
 
 @-webkit-keyframes cloudscroll {
   0%   { background-position: 0px 0px; }
@@ -227,6 +235,7 @@ footer {
 	width: 2em;
 	line-height: 2em;
 	border-radius: 50%;
+	color: @brand-primary;
 }
 
 .btn-toaction {
@@ -281,4 +290,14 @@ footer {
 
 	}
 
+}
+
+
+#subbar {
+	background: @brand-primary;
+	margin: 0 0 20px;
+
+	nav {
+		margin: 0;
+	}
 }
