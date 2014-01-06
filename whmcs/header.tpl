@@ -11,7 +11,7 @@
 
 	<script type="text/javascript" src="//use.typekit.net/hdc5zbf.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="path/to/css/style.css" type="text/css">
+	<link rel="stylesheet" href="//hailhost.com/css/style.css" type="text/css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css">
 
 	{$headoutput}
@@ -30,26 +30,26 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="{{ baseUri }}"><b>Hail</b>Host</a>
+				<a class="navbar-brand" href="//hailhost.com/"><b>Hail</b>Host</a>
 			</div>
 			<div class="collapse navbar-collapse" id="js-navcollapse">
-				<div class="navbar-form navbar-right"><a class="btn btn-primary" href="{{ baseUri }}/whmcs/cart.php">Buy Now</a></div>
+				<div class="navbar-form navbar-right"><a class="btn btn-primary" href="//hailhost.com//billing/cart.php">Buy Now</a></div>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="{{ baseUri }}">Home</a></li>
-					<li><a href="{{ baseUri }}/pricing">Pricing</a></li>
+					<li><a href="//hailhost.com/">Home</a></li>
+					<li><a href="//hailhost.com/billing/cart.php">Pricing</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="{{ baseUri }}/our-team">Our Team</a></li>
-							<li><a href="{{ baseUri }}/faq">FAQ</a></li>
-							<li><a href="{{ baseUri }}/why-hailhost">Why HailHost</a></li>
+							<li><a href="//hailhost.com//our-team">Our Team</a></li>
+							<li><a href="//hailhost.com//faq">FAQ</a></li>
+							<li><a href="//hailhost.com//why-hailhost">Why HailHost</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Panel <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="{{ baseUri }}/billing">Billing</a></li>
-							<li><a href="{{ baseUri }}/multicraft">Multicraft</a></li>
+							<li><a href="//hailhost.com/billing">Billing</a></li>
+							<li><a href="//multicraft.hailhost.com">Multicraft</a></li>
 						</ul>
 					</li>
 				</ul>

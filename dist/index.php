@@ -5,7 +5,7 @@ session_start();
 require 'vendor/autoload.php';
 
 $app = new \Slim\Slim;
-$app->config('baseRoute', '/g/hailhost/dist');
+$app->config('baseRoute', '');
 
 // Register a singleton of the Mustache engine, and tell it to cache
 $app->container->singleton('twig', function () {
