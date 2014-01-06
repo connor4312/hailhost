@@ -43,7 +43,7 @@ a {
 #intro {
 	color: #fff;
 	#gradient.vertical(#50b5e1, #1f90c1);
-	padding: 50px 0 116px;
+	padding: 50px;
 	position: relative;
 
 	&:after {
@@ -53,7 +53,8 @@ a {
 		height: 86px;
 		background: url('../img/clouds.png');
 		bottom: 0px;
-		.animation(cloudscroll 90s linear infinite)
+		.animation(cloudscroll 90s linear infinite);
+		left: 0;
 	}
 
 	&:before {
@@ -67,13 +68,84 @@ a {
 		margin-left: 200px;
 	}
 
-	h1 {
+	h1, h2 {
 		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		font-weight: 200;
 	}
 
-	.btn {
+	h1 {
+		color: #fff;
+		text-align: left;
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 36px;
+		text-shadow: 0 1px 2px #000;
+		height: 96px;
+		.transition(0.3s);
+		width: 475px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.ticker {
+		height: 96px;
+		overflow: hidden;
+		margin-top: 50px;
+	}
+
+	.btn-to-action {
 		display: block;
-		width: 100%;
+		padding: 8px 40px;
+		margin: 15px auto 50px;
+		border-radius: 4px;
+		margin-bottom: 100px;
+		width: 200px;
+		color: #fff;
+		text-align: center;
+		font-family: @font-family-sans-serif;
+		font-size: 1.2em;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.2);
+		.transition(0.2s);
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.2);
+			.transition(0.5s);
+		}
+	}
+}
+
+#slider {
+	background: #000 url('../img/slide1.jpg') center top no-repeat;
+	margin: -20px 0 20px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1px 0;
+
+	h1 {
+		color: #fff;
+		text-align: left;
+		font-size: 3em;
+		font-weight: 200;
+	}
+
+	h2 {
+		font-weight: 200;
+		font-size: 32px;
+		text-shadow: 0 1px 2px #000;
+		height: 96px;
+		.transition(0.3s);
+		width: 475px;
+		margin: 0 auto;
+	}
+
+	.ticker {
+		height: 96px;
+		overflow: hidden;
+		margin-top: 100px;
 	}
 }
 
@@ -285,11 +357,8 @@ footer {
 			&.active {
 				display: block;
 			}
-
 		}
-
 	}
-
 }
 
 
@@ -299,5 +368,19 @@ footer {
 
 	nav {
 		margin: 0;
+	}
+}
+
+.featbox {
+
+	text-align: center;
+
+	p {
+		font-size: 1.1em;
+		margin: 1em 50px;
+	}
+
+	h3 {
+		font-weight: 200;
 	}
 }
