@@ -10,7 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<script type="text/javascript" src="//use.typekit.net/hdc5zbf.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript">Typekit.load();</script>
 	<link rel="stylesheet" href="//hailhost.com/css/style.css" type="text/css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css" type="text/css">
 
