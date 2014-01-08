@@ -146,6 +146,10 @@
 			</nav>
 		</div>
 	</div>
+	<div id="intro">
+		<h1>Billing Area</h1>
+	</div>
+	<div class="whitegrad">
 	<div class="container">
 		<div class="pagecontent">
 

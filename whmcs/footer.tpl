@@ -1,5 +1,6 @@
 </div>
 </div>
+</div>
 
 {if $pagetitle eq $LANG.carttitle}</div>{/if}
 </div>

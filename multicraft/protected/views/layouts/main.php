@@ -150,27 +150,31 @@
 				</nav>
 			</div>
 		</div><!-- mainmenu -->
+		<div id="intro">
+			<h1>Multicraft</h1>
+		</div>
+		<div class="whitegrad">
+			<div class="container">
+				<div class="pagecontent">
+				
+					<?php
+						if (!$simple)
+						{
+							array_pop($this->breadcrumbs);
+							$this->widget('zii.widgets.CBreadcrumbs', array(
+								'homeLink'=>'',
+								'links'=>$this->breadcrumbs,
+								'tagName' => 'ol',
+								'htmlOptions' => array('class' => 'breadcrumb'),
+								'separator' => '',
+								'activeLinkTemplate' => '<li><a href="{url}">{label}</a></li>',
+								'inactiveLinkTemplate' => '<li class="active">{label}</li>',
+							));
+						}
+					?>
 
-		<div class="container">
-			<div class="pagecontent">
-			
-				<?php
-					if (!$simple)
-					{
-						array_pop($this->breadcrumbs);
-						$this->widget('zii.widgets.CBreadcrumbs', array(
-							'homeLink'=>'',
-							'links'=>$this->breadcrumbs,
-							'tagName' => 'ol',
-							'htmlOptions' => array('class' => 'breadcrumb'),
-							'separator' => '',
-							'activeLinkTemplate' => '<li><a href="{url}">{label}</a></li>',
-							'inactiveLinkTemplate' => '<li class="active">{label}</li>',
-						));
-					}
-				?>
-
-				<?php echo $content; ?>
+					<?php echo $content; ?>
+				</div>
 			</div>
 		</div>
 	</div>
