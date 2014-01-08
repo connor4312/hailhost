@@ -36,13 +36,13 @@
 				<div class="navbar-form navbar-right"><a class="btn btn-primary" href="//hailhost.com//billing/cart.php">Buy Now</a></div>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="//hailhost.com/">Home</a></li>
-					<li><a href="//hailhost.com/billing/cart.php">Pricing</a></li>
+					<li><a href="//hailhost.com/pricing">Pricing</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="//hailhost.com//our-team">Our Team</a></li>
-							<li><a href="//hailhost.com//faq">FAQ</a></li>
-							<li><a href="//hailhost.com//why-hailhost">Why HailHost</a></li>
+							<li><a href="//hailhost.com/our-team">Our Team</a></li>
+							<li><a href="//hailhost.com/faq">FAQ</a></li>
+							<li><a href="//hailhost.com/why-hailhost">Why HailHost</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">

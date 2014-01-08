@@ -76,7 +76,8 @@ a {
 	h1 {
 		color: #fff;
 		text-align: left;
-		font-size: 3em;
+		font-size: 5em;
+		margin: -0.2em 0 0;
 	}
 
 	h2 {
@@ -256,7 +257,7 @@ h1.fancy {
 		width: 100%;
 		bottom: 0;
 		left: 0;
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #aaa;
 		z-index: -100;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
 		height: 2em;
@@ -266,8 +267,8 @@ h1.fancy {
 	&:before {
 		width: 2em;
 		height: 2em;
-		border-right: 1px solid #ddd;
-		border-bottom: 1px solid #ddd;
+		border-right: 1px solid #aaa;
+		border-bottom: 1px solid #aaa;
 		border-radius: 0.4em;
 		background: #fff;
 		position: absolute;
@@ -394,7 +395,20 @@ footer {
 		background: #fff;
 	}
 }
-.whitebox {
+
+.testimonial {
+	margin: 20px auto;
+	padding: 20px;
+	background: @brand-primary;
+	font-size: 1.1em;
+	color: #fff;
+	max-width: 760px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+	i {
+		color: lighten(@brand-primary, 20%);
+	}
+}.whitebox {
 	background: #fff;
 	padding: 10px;
 	margin: 0 0 20px;
