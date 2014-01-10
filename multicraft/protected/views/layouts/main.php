@@ -150,8 +150,10 @@
 				</nav>
 			</div>
 		</div><!-- mainmenu -->
-		<div id="intro">
-			<h1>Multicraft</h1>
+		<div id="intro" class="noplane">
+			<div class="container">
+				<h1>Multicraft</h1>
+			</div>
 		</div>
 		<div class="whitegrad">
 			<div class="container">

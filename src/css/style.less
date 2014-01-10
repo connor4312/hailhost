@@ -116,6 +116,14 @@ a {
 			.transition(0.5s);
 		}
 	}
+
+	&.noplane:before {
+		display: none;
+	}
+}
+#subbar+#intro {
+	margin-top: -20px;
+	border-top: 1px solid lighten(@brand-primary, 20%);
 }
 
 #slider {
@@ -213,7 +221,7 @@ h1.fancy {
 	.plan-btn {
 		line-height: 2em;
 		display: block;
-		margin: 0 auto;
+		margin: 1em auto 2em;
 		width: 50%;
 	}
 }
@@ -232,9 +240,17 @@ h1.fancy {
 }
 
 .makePlanColors('chicken', #e70d0c, #fff);
-.makePlanColors('cow', #7e4b1b, #fff);
+.makePlanColors('sheep', #7e4b1b, #fff);
+.makePlanColors('cow', #eaeaec, #000);
+.makePlanColors('spider', #550d0b, #fff);
+.makePlanColors('zombie', #253517, #fff);
+.makePlanColors('skeleton', #5d5d5d, #fff);
 .makePlanColors('creeper', #52de3d, #fff);
+.makePlanColors('pigman', #953d19, #fff);
+.makePlanColors('blaze', #fef30d, #000);
+.makePlanColors('enderman', #212725, #fff);
 .makePlanColors('wither', #000, #fff);
+.makePlanColors('enderdragon', #000, #fff);
 
 .showmore {
 	display: block;

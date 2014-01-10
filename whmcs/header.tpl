@@ -146,8 +146,10 @@
 			</nav>
 		</div>
 	</div>
-	<div id="intro">
-		<h1>Billing Area</h1>
+	<div id="intro" class="noplane">
+		<div class="container">
+			<h1>Billing Area</h1>
+		</div>
 	</div>
 	<div class="whitegrad">
 	<div class="container">
